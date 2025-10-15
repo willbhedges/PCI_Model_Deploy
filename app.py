@@ -15,8 +15,7 @@ from encoders import PlantTargetEncoder, add_derived_features, normalise_plant
 sys.modules.setdefault('__main__', sys.modules[__name__])
 sys.modules['__main__'].__dict__['PlantTargetEncoder'] = PlantTargetEncoder
 
-st.set_page_config(page_title="PCI Bid Analysis by Market", layout="centered")
-st.title("PCI Bids: Market Price Estimation")
+
 
 # Shim: your pickle likely references __main__.PlantTargetEncoder
 sys.modules['__main__'].__dict__['PlantTargetEncoder'] = PlantTargetEncoder
