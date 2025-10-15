@@ -23,7 +23,7 @@ sys.modules['__main__'].__dict__['PlantTargetEncoder'] = PlantTargetEncoder
 st.set_page_config(page_title="PCI Bid Analysis by Market", layout="centered")
 st.title("PCI Bids: Market Price Estimation")
 st.text("Market-aware price estimate per yd with uncertainty.")
-st.text("Does not account for mix design: use estimation for environemental impact calculations and then manually adjust for mix design")
+st.text("Does not account for mix design: use estimation for environmental impact calculations and then manually adjust for mix design")
 st.caption("Model trained on PCI bid data from 2025.")
 
 
