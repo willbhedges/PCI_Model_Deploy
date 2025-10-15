@@ -1,0 +1,74 @@
+{
+  "data_stats": {
+    "total_rows": 862.0,
+    "rows_after_clean": 853.0,
+    "yardage_missing": 350.0,
+    "quarter_unknown": 0.0,
+    "plant_count": 19.0,
+    "yardage_global_median": 790.0
+  },
+  "model": "stacked_ga",
+  "ga_settings": {
+    "population": 30,
+    "generations": 20,
+    "crossover_prob": 0.6,
+    "mutation_prob": 0.25
+  },
+  "selected_features": {
+    "all_numeric": [
+      "Travel",
+      "Yardage_filled",
+      "Yardage_missing_flag",
+      "Yardage_filled_cube",
+      "Plant_avg_yardage",
+      "Plant_order_count"
+    ],
+    "derived_selected": [
+      "Yardage_filled_cube",
+      "Plant_avg_yardage",
+      "Plant_order_count"
+    ]
+  },
+  "metrics": {
+    "full_dataset": {
+      "r2": 0.49799502819508423,
+      "mae": 7.102117870799436,
+      "rmse": 9.80107828058103
+    },
+    "holdout_train": {
+      "r2": 0.5695047028994152,
+      "mae": 6.496060648996636,
+      "rmse": 9.110526244777523
+    },
+    "holdout_test": {
+      "r2": 0.36807774523203485,
+      "mae": 7.573031346157153,
+      "rmse": 10.787951147062612
+    },
+    "cross_validation": {
+      "r2": 0.3076920945186278,
+      "mae": 8.27037834986211,
+      "rmse": 11.463967425877982
+    }
+  },
+  "settings": {
+    "test_size": 0.2,
+    "kfolds": 5,
+    "seed": 42
+  },
+  "feature_schema": [
+    "Travel",
+    "Yardage_filled",
+    "Yardage_missing_flag",
+    "Yardage_filled_cube",
+    "Plant_avg_yardage",
+    "Plant_order_count",
+    "Plant",
+    "Quarter"
+  ],
+  "categorical_features": [
+    "Plant",
+    "Quarter"
+  ],
+  "model_path": "/mnt/c/Users/willb/Documents/2025/PCI/price_model.joblib"
+}
