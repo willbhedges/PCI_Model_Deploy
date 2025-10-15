@@ -1,4 +1,4 @@
-# app.py
+# app.py (top)
 from __future__ import annotations
 import json, os, sys
 from typing import List
@@ -8,8 +8,15 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-# Import your training-time symbols so unpickling can resolve them
+# Import training-time symbols so unpickling can resolve them
 from encoders import PlantTargetEncoder, add_derived_features, normalise_plant
+
+# Make sure __main__ exists, then register the class there (pickle expects __main__.PlantTargetEncoder)
+sys.modules.setdefault('__main__', sys.modules[__name__])
+sys.modules['__main__'].__dict__['PlantTargetEncoder'] = PlantTargetEncoder
+
+st.set_page_config(page_title="PCI Bid Analysis by Market", layout="centered")
+st.title("PCI Bids: Market Price Estimation")
 
 # Shim: your pickle likely references __main__.PlantTargetEncoder
 sys.modules['__main__'].__dict__['PlantTargetEncoder'] = PlantTargetEncoder
