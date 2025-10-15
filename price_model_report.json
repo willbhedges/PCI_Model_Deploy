@@ -19,36 +19,36 @@
       "Travel",
       "Yardage_filled",
       "Yardage_missing_flag",
-      "Yardage_filled_cube",
+      "Yardage_filled_sqrt",
       "Plant_avg_yardage",
       "Plant_order_count"
     ],
     "derived_selected": [
-      "Yardage_filled_cube",
+      "Yardage_filled_sqrt",
       "Plant_avg_yardage",
       "Plant_order_count"
     ]
   },
   "metrics": {
     "full_dataset": {
-      "r2": 0.49799502819508423,
-      "mae": 7.102117870799436,
-      "rmse": 9.80107828058103
+      "r2": 0.4976902507889437,
+      "mae": 7.104720264711215,
+      "rmse": 9.804053045903725
     },
     "holdout_train": {
-      "r2": 0.5695047028994152,
-      "mae": 6.496060648996636,
-      "rmse": 9.110526244777523
+      "r2": 0.5693699868671016,
+      "mae": 6.498664698950878,
+      "rmse": 9.111951623815408
     },
     "holdout_test": {
-      "r2": 0.36807774523203485,
-      "mae": 7.573031346157153,
-      "rmse": 10.787951147062612
+      "r2": 0.3681888658276803,
+      "mae": 7.573139809647233,
+      "rmse": 10.787002599791096
     },
     "cross_validation": {
-      "r2": 0.3076920945186278,
-      "mae": 8.27037834986211,
-      "rmse": 11.463967425877982
+      "r2": 0.30769738208761227,
+      "mae": 8.270238630501263,
+      "rmse": 11.463942025903478
     }
   },
   "settings": {
@@ -60,7 +60,7 @@
     "Travel",
     "Yardage_filled",
     "Yardage_missing_flag",
-    "Yardage_filled_cube",
+    "Yardage_filled_sqrt",
     "Plant_avg_yardage",
     "Plant_order_count",
     "Plant",
